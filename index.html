@@ -86,7 +86,7 @@
         }
 
         .whitebox-group {
-          background: #fff;
+          background: #f0f0f0;
           border-radius: 12px;
           padding: 24px;
           box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -174,10 +174,10 @@
                 ㅤ여기도 어떤 설명 2
             </p>
         </div>
-
-        <h2 style="text-align:center;">White-box</h2>
         
         <div class="whitebox-group">
+            <h2 style="text-align:center;">White-box</h2>
+
             <!-- RTVC Samples Section -->
             <div class="section">
                 <h2>RTVC Samples</h2>
@@ -208,99 +208,103 @@
                     </tbody>
                 </table>
             </div>
+
+            <!-- cosyvoice Samples Section -->
+            <div class="section">
+                <h2>CosyVoice Samples</h2>
+                <table class="audio-samples">
+                    <thead>
+                        <tr>
+                            <th>Acoustic category</th>
+                            <th>Defense voice</th>
+                            <th>Text-to Speech voice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> babble</td>
+                            <td><audio controls class="audio-player"><source src="demo/cosyvoice/babble/protected.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/cosyvoice/babble/tts.wav"></audio></td>
+                        </tr>
+                        <tr>
+                            <td>office</td>
+                            <td><audio controls class="audio-player"><source src="demo/cosyvoice/office/protected.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/cosyvoice/office/tts.wav"></audio></td>
+                        </tr>
+                        <tr>
+                            <td>rain</td>
+                            <td><audio controls class="audio-player"><source src="demo/cosyvoice/rain/protected.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/cosyvoice/rain/tts.wav"></audio></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
-        <!-- cosyvoice Samples Section -->
-        <div class="section">
-            <h2>CosyVoice Samples</h2>
-            <table class="audio-samples">
-                <thead>
-                    <tr>
-                        <th>Acoustic category</th>
-                        <th>Defense voice</th>
-                        <th>Text-to Speech voice</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> babble</td>
-                        <td><audio controls class="audio-player"><source src="demo/cosyvoice/babble/protected.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/cosyvoice/babble/tts.wav"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>office</td>
-                        <td><audio controls class="audio-player"><source src="demo/cosyvoice/office/protected.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/cosyvoice/office/tts.wav"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>rain</td>
-                        <td><audio controls class="audio-player"><source src="demo/cosyvoice/rain/protected.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/cosyvoice/rain/tts.wav"></audio></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <div class="whitebox-group">
+            <h2 style="text-align:center;">Black-box</h2>
+
+            <!-- tortoise Samples Section -->
+            <div class="section">
+                <h2>Tortoise Samples</h2>
+                <table class="audio-samples">
+                    <thead>
+                        <tr>
+                            <th>Acoustic category</th>
+                            <th>Defense voice</th>
+                            <th>Text-to Speech voice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> babble</td>
+                            <td><audio controls class="audio-player"><source src="demo/elevenlabs/babble/protected.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/tortoise/babble/6099_1_1.wav"></audio></td>
+                        </tr>
+                        <tr>
+                            <td>music</td>
+                            <td><audio controls class="audio-player"><source src="demo/elevenlabs/music/3185_8.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/tortoise/music/3185_3_3.wav"></audio></td>
+                        </tr>
+                        <tr>
+                            <td>rain</td>
+                            <td><audio controls class="audio-player"><source src="demo/elevenlabs/rain/som_03853_01686458454.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/tortoise/rain/som_03853_00646711195_2.wav"></audio></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         
-        <!-- tortoise Samples Section -->
-        <div class="section">
-            <h2>Tortoise Samples</h2>
-            <table class="audio-samples">
-                <thead>
-                    <tr>
-                        <th>Acoustic category</th>
-                        <th>Defense voice</th>
-                        <th>Text-to Speech voice</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> babble</td>
-                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/babble/protected.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/tortoise/babble/6099_1_1.wav"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>music</td>
-                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/music/3185_8.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/tortoise/music/3185_3_3.wav"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>rain</td>
-                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/rain/som_03853_01686458454.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/tortoise/rain/som_03853_00646711195_2.wav"></audio></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <!-- elevenlabs Samples Section -->
-        <div class="section">
-            <h2>Elenvelabs Samples</h2>
-            <table class="audio-samples">
-                <thead>
-                    <tr>
-                        <th>Acoustic category</th>
-                        <th>Defense voice</th>
-                        <th>Text-to Speech voice</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> babble</td>
-                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/babble/protected.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/babble/protected_tts.mp3"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>music</td>
-                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/music/3185_8.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/music/tts_7.mp3"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>rain</td>
-                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/rain/som_03853_01686458454.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/rain/tts_9.mp3"></audio></td>
-                    </tr>
-                </tbody>
-            </table>
+            <!-- elevenlabs Samples Section -->
+            <div class="section">
+                <h2>Elenvelabs Samples</h2>
+                <table class="audio-samples">
+                    <thead>
+                        <tr>
+                            <th>Acoustic category</th>
+                            <th>Defense voice</th>
+                            <th>Text-to Speech voice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> babble</td>
+                            <td><audio controls class="audio-player"><source src="demo/elevenlabs/babble/protected.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/elevenlabs/babble/protected_tts.mp3"></audio></td>
+                        </tr>
+                        <tr>
+                            <td>music</td>
+                            <td><audio controls class="audio-player"><source src="demo/elevenlabs/music/3185_8.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/elevenlabs/music/tts_7.mp3"></audio></td>
+                        </tr>
+                        <tr>
+                            <td>rain</td>
+                            <td><audio controls class="audio-player"><source src="demo/elevenlabs/rain/som_03853_01686458454.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/elevenlabs/rain/tts_9.mp3"></audio></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
