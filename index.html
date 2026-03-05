@@ -85,6 +85,17 @@
             text-align: left;
         }
 
+        .whitebox-group {
+          background: #fff;
+          border-radius: 12px;
+          padding: 24px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .whitebox-group h3 {
+          margin-top: 32px;
+        }
+
         /* 테이블 스타일 */
         .audio-samples {
             width: 100%;
@@ -110,13 +121,14 @@
         }
         .audio-samples th:first-child,
         .audio-samples td:first-child {
-            width: 50%; /* Type 열 */
+            width: 40%; /* Type 열 */
+            text-align: center;
         }
         .audio-samples th:nth-child(2),
         .audio-samples td:nth-child(2),
         .audio-samples th:nth-child(3),
         .audio-samples td:nth-child(3) {
-            width: 25%; /* Real Audio와 Defense Audio 열 */
+            width: 30%; /* Real Audio와 Defense Audio 열 */
         }
         .audio-samples tbody tr td {
             padding: 20px 15px; /* 행 높이를 위해 내부 여백 조정 */
@@ -163,75 +175,48 @@
             </p>
         </div>
 
-        <!-- RTVC Samples Section -->
-        <div class="section">
-            <h2>RTVC Samples</h2>
-            <table class="audio-samples">
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Defense voice</th>
-                        <th>Text-to Speech voice</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> babble</td>
-                        <td><audio controls class="audio-player"><source src="demo/rtvc/babble/protected.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/rtvc/babble/tts.wav"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>office</td>
-                        <td><audio controls class="audio-player"><source src="demo/rtvc/office/protected.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/rtvc/office/tts.wav"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>rain</td>
-                        <td><audio controls class="audio-player"><source src="demo/rtvc/rain/prt.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/rtvc/rain/tts.wav"></audio></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- tortoise Samples Section -->
-        <div class="section">
-            <h2>Tortoise Samples</h2>
-            <table class="audio-samples">
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Defense voice</th>
-                        <th>Text-to Speech voice</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> babble</td>
-                        <td><audio controls class="audio-player"><source src="demo/tortoise/babble/6099_1_1.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/tortoise/babble/tts.wav"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>music</td>
-                        <td><audio controls class="audio-player"><source src="demo/tortoise/music/3185_3_3.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/tortoise/music/tts.wav"></audio></td>
-                    </tr>
-                    <tr>
-                        <td>rain</td>
-                        <td><audio controls class="audio-player"><source src="demo/tortoise/rain/som_03853_00646711195_2.wav"></audio></td>
-                        <td><audio controls class="audio-player"><source src="demo/tortoise/rain/tts.wav"></audio></td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2 style="text-align:center;">White-box</h2>
+        
+        <div class="whitebox-group">
+            <!-- RTVC Samples Section -->
+            <div class="section">
+                <h2>RTVC Samples</h2>
+                <table class="audio-samples">
+                    <thead>
+                        <tr>
+                            <th>Acoustic category</th>
+                            <th>Defense voice</th>
+                            <th>Text-to Speech voice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> babble</td>
+                            <td><audio controls class="audio-player"><source src="demo/rtvc/babble/protected.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/rtvc/babble/tts.wav"></audio></td>
+                        </tr>
+                        <tr>
+                            <td>office</td>
+                            <td><audio controls class="audio-player"><source src="demo/rtvc/office/protected.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/rtvc/office/tts.wav"></audio></td>
+                        </tr>
+                        <tr>
+                            <td>rain</td>
+                            <td><audio controls class="audio-player"><source src="demo/rtvc/rain/prt.wav"></audio></td>
+                            <td><audio controls class="audio-player"><source src="demo/rtvc/rain/tts.wav"></audio></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <!-- cosyvoice Samples Section -->
         <div class="section">
-            <h2>cosyvoice Samples</h2>
+            <h2>CosyVoice Samples</h2>
             <table class="audio-samples">
                 <thead>
                     <tr>
-                        <th>Type</th>
+                        <th>Acoustic category</th>
                         <th>Defense voice</th>
                         <th>Text-to Speech voice</th>
                     </tr>
@@ -256,13 +241,44 @@
             </table>
         </div>
         
-        <!-- elevenlabs Samples Section -->
+        <!-- tortoise Samples Section -->
         <div class="section">
-            <h2>elevenlabs Samples</h2>
+            <h2>Tortoise Samples</h2>
             <table class="audio-samples">
                 <thead>
                     <tr>
-                        <th>Type</th>
+                        <th>Acoustic category</th>
+                        <th>Defense voice</th>
+                        <th>Text-to Speech voice</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> babble</td>
+                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/babble/protected.wav"></audio></td>
+                        <td><audio controls class="audio-player"><source src="demo/tortoise/babble/6099_1_1.wav"></audio></td>
+                    </tr>
+                    <tr>
+                        <td>music</td>
+                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/music/3185_8.wav"></audio></td>
+                        <td><audio controls class="audio-player"><source src="demo/tortoise/music/3185_3_3.wav"></audio></td>
+                    </tr>
+                    <tr>
+                        <td>rain</td>
+                        <td><audio controls class="audio-player"><source src="demo/elevenlabs/rain/som_03853_01686458454.wav"></audio></td>
+                        <td><audio controls class="audio-player"><source src="demo/tortoise/rain/som_03853_00646711195_2.wav"></audio></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- elevenlabs Samples Section -->
+        <div class="section">
+            <h2>Elenvelabs Samples</h2>
+            <table class="audio-samples">
+                <thead>
+                    <tr>
+                        <th>Acoustic category</th>
                         <th>Defense voice</th>
                         <th>Text-to Speech voice</th>
                     </tr>
