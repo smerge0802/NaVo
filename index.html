@@ -204,7 +204,7 @@
             <h2>Abstract</h2>
             <p>
                 <span class="dropcap">P</span>
-                roactive defense against voice cloning disrupts synthesis by injecting adversarial perturbations. However, prior methods rely on iterative optimization, often causing perceptual distortion and high latency that limit real-time deployment. We propose \textbf{NaVo}, a generative framework that produces natural-sounding universal adversarial audio. NaVo guides a latent diffusion–based text-to-audio model with fine-tuned low-rank adaptation modules tailored to gender and acoustic categories such as rain, music, and babble, enabling high-fidelity, speaker-independent adversarial audio generation. Unlike optimization-based approaches, NaVo supports real-time protection through simple audio mixing without gradient-based inference. It achieves a 76% defense success rate against a widely used commercial voice cloning system in a black-box setting. By jointly addressing universality, audio quality, and computational efficiency, NaVo offers a practical solution for proactive voice protection.
+                roactive defense against voice cloning disrupts synthesis by injecting adversarial perturbations. However, prior methods rely on iterative optimization, often causing perceptual distortion and high latency that limit real-time deployment. We propose <b>NaVo</b>, a generative framework that produces natural-sounding universal adversarial audio. NaVo guides a latent diffusion–based text-to-audio model with fine-tuned low-rank adaptation modules tailored to gender and acoustic categories such as rain, music, and babble, enabling high-fidelity, speaker-independent adversarial audio generation. Unlike optimization-based approaches, NaVo supports real-time protection through simple audio mixing without gradient-based inference. It achieves a 76% defense success rate against a widely used commercial voice cloning system in a black-box setting. By jointly addressing universality, audio quality, and computational efficiency, NaVo offers a practical solution for proactive voice protection.
             </p>
         </div>
 
@@ -213,7 +213,7 @@
             <h2>Model Overview</h2>
             <img src="model.png" alt="Model Overview Image">
             <p>
-                Overview of the NaVo framework. (Left) During training, the base text-to-audio (T2A) model is fine-tuned via LoRA using the proposed distributional target loss. (Right) During inference, an appropriate category-specific LoRA module is applied to generate UAA, which is then simply mixed with the original speech to construct the final protected audio.
+                <b>Overview of the NaVo framework</b>. (Left) During training, the base text-to-audio (T2A) model is fine-tuned via LoRA using the proposed distributional target loss. (Right) During inference, an appropriate category-specific LoRA module is applied to generate UAA, which is then simply mixed with the original speech to construct the final protected audio.
             </p>
         </div>
         
